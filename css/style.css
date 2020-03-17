@@ -485,6 +485,7 @@ a.btn-article {
     background-color: #f8f7f4;
     border-image-source: url(../img/index/border-mailing.svg);
     border-image-slice: 10;
+    border-image-repeat: stretch;
     border: 5px solid transparent;
 
 }
@@ -808,12 +809,12 @@ p.order-phone {
     display: block;
     width: 128px;
     height: 1px;
-    color: #323232;
+    background-color: #323232;
     opacity: 0.2;
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 7px;
 }
 
 .menu a {
@@ -904,18 +905,7 @@ p.order-phone {
     background-color: transparent;
 }
 
-.delete::before {
-    content: "";
-
-    display: block;
-    width: 16px;
-    height: 2px;
-    
-    color: #323232;
-
-    transform: rotate(45deg);
-}
-
+.delete::before,
 .delete::after {
     content: "";
 
@@ -923,7 +913,17 @@ p.order-phone {
     width: 16px;
     height: 2px;
     
-    color: #323232;
+    background-color: #323232;
+}
+
+.delete::before {
+    content: "";
+
+    transform: rotate(45deg);
+}
+
+.delete::after {
+    content: "";
 
     transform: rotate(-45deg);
 }
@@ -999,23 +999,7 @@ p.order-phone {
     right: 0;
 }
 
-.btn-close::before {
-    content: "";
-
-    display: block;
-    width: 26px;
-    height: 3px;
-    
-    color: #323232;
-
-    transform: rotate(45deg);
-
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-}
-
+.btn-close::before,
 .btn-close::after {
     content: "";
 
@@ -1023,13 +1007,24 @@ p.order-phone {
     width: 26px;
     height: 3px;
     
-    color: #323232;
-
-    transform: rotate(-45deg);
+    background-color: #323232;    
 
     position: absolute;
-    top: 0;
-    right: 0;
+    z-index: 2;
+    top: 34px;
+    right: 18px;
+}
+
+.btn-close::before {
+    content: "";
+
+    transform: rotate(45deg);
+}
+
+.btn-close::after {
+    content: "";
+
+    transform: rotate(-45deg);
 }
 
 /* Стилизация внутренней страницы */
@@ -1037,8 +1032,6 @@ p.order-phone {
 .btn-menu-current {
     background-color: #d07058;
 }
-
-
 
 .btn-basket-indicator {
     color: #323232;
@@ -1114,9 +1107,22 @@ p.order-phone {
 .selection-form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
 
-    margin-bottom: 42px;
+    margin-bottom: 24px;
+
+    max-width: 858px;    
 }
+
+.sorting,
+.range,
+.fat,
+.filler,
+.btn-form-inner-page {
+    margin-bottom: 15px;
+}
+
 
 .sorting p,
 .range p,
@@ -1128,13 +1134,6 @@ p.order-phone {
 
     margin: 0 0 5px 0;
     padding-left: 17px;
-}
-
-.sorting,
-.range,
-.fat,
-.filler {
-    margin: 0 14px 18px 0;
 }
 
 .btn-sorting {
@@ -1222,7 +1221,6 @@ p.order-phone {
 .fat,
 .filler {
     border: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -1231,12 +1229,19 @@ p.order-phone {
     list-style: none;
 
     margin: 0;
-    padding: 6px 15px;
-
+    
     background-color: rgba(248, 247, 244, 0.2);
     border-radius: 50px;
 
     display: flex;
+}
+
+.fat ul {
+    padding: 6.5px 15px;
+}
+
+.filler ul {
+    padding: 6.5px 18px 6.5px 14px;
 }
 
 .fat li:not(:last-child) {
@@ -1267,7 +1272,7 @@ p.order-phone {
     position: relative;
 }
 
-.list-option[type="radio"]:checked~.label-radio-option.radio-indicator::before {
+.label-radio-option input[type="radio"]:checked+.radio-indicator::before {
     content: "";
 
     width: 9px;
@@ -1281,8 +1286,8 @@ p.order-phone {
     left: 20%;
 } 
 
-.list-filler li {
-    margin-right: 20px;
+.list-filler li:not(:last-child) {
+    margin-right: 22px;
 }
 
 .checkbox-indicator {
@@ -1295,11 +1300,29 @@ p.order-phone {
     border-radius: 3px;
 
     margin-right: 8px;
+
+    position: relative;
+}
+
+.label-checkbox-filler input[type="checkbox"]:checked+.checkbox-indicator::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: 3px;
+    display: block;
+    width: 14px;
+    height: 7px;
+    border: 4px solid #f8f7f4;
+    border-top-width: 0;
+    border-right-width: 0;
+
+    transform: rotate(-45deg);
 }
 
 .type-filler {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 25px;
     font-weight: 500;
 }
 
@@ -1308,7 +1331,9 @@ p.order-phone {
     line-height: 18px;
     font-weight: 500;
 
-    padding: 8px 28px;
+    max-height: 38px;
+
+    padding: 8px 27px;
     border: 2px solid #ffffff;
     border-radius: 50px;
     background-color: rgba(248, 247, 244, 0.2);
