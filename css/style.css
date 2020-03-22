@@ -92,6 +92,7 @@ button {
   margin: 14px 0 0 0;
 
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-navigation-control {
@@ -140,6 +141,28 @@ button {
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   background-color: #fefefe;
+}
+
+.modal-search input:hover,
+.modal-search input:focus,
+.form-entrance input:hover,
+.form-entrance input:focus,
+.feedback-form input:hover,
+.feedback-form input:focus,
+.newsletter-subscription input:hover,
+.newsletter-subscription input:focus,
+.textarea-feedback:hover,
+.textarea-feedback:focus {
+  border: 1px solid rgba(154, 154, 154, 0.52);
+}
+
+.modal-search input:active,
+.form-entrance input:active,
+.feedback-form input:active, 
+.newsletter-subscription input:active,
+.textarea-feedback:active {
+  border: 1px solid rgba(46, 136, 228, 0.52);
+  outline: none;
 }
 
 .modal-menu {
@@ -635,6 +658,7 @@ li.busket-row {
 
 .stock {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin-bottom: 17px;
@@ -650,10 +674,12 @@ li.busket-row {
 
 .current-promotion.raspberries {
   background-image: url(../img/index/raspberry-background.jpg);
+  background-color: #991c0c;
 }
 
 .current-promotion.chocolate {
   background-image: url(../img/index/chocolate-background.jpg);
+  background-color: #623807;
 }
 
 .current-promotion h3 {
@@ -809,6 +835,7 @@ a.btn-cards:active {
   color: #323232;
 
   background-image: url(../img/index/waffle-background.jpg);
+  background-color: #f8ecd5;
 
   max-width: 100%;
   padding: 24px 0 0 20px;
@@ -898,6 +925,7 @@ a.btn-cards:active {
 
 .additional-information {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin-bottom: 40px;
@@ -916,6 +944,7 @@ a.btn-cards:active {
 
   background-image: url(../img/index/news-background.jpg);
   background-repeat: no-repeat;
+  background-color: #ffffff;
 
   padding: 26px 259px 81px 20px;
 }
@@ -969,6 +998,7 @@ a.btn-cards:active {
 
 .newsletter-subscription input {
   line-height: 24px;
+  color: #323232;
 
   padding: 9px 14px;
 
@@ -977,7 +1007,9 @@ a.btn-cards:active {
 
   background-color: #ffffff;
   border-radius: 5px;
-  border: solid 1px rgba(178, 178, 178, 0.52);
+  border: 1px solid rgba(178, 178, 178, 0.52);
+
+  cursor: pointer;
 }
 
 .map {
@@ -1087,6 +1119,7 @@ p.order-phone {
   margin-top: 14px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-contacts li {
