@@ -256,6 +256,10 @@ button {
   background-color: #d07058;
 }
 
+.item-site-nav-current a {
+  border-bottom: 1px solid transparent;
+}
+
 .control li {
   font-size: 14px;
   line-height: 16px;
@@ -1101,6 +1105,7 @@ a.btn-cards:active {
 }
 
 .map iframe {
+  width: 100%;
   border: none;
 }
 
@@ -1774,10 +1779,8 @@ a.btn-sorting:focus,
   border-color: rgba(255, 255, 255, 1);
 }
 
-.label-radio-option:hover
-  input[type="radio"]:checked
-  + .radio-indicator::before {
-  border-color: rgba(255, 255, 255, 1);
+.label-radio-option:hover input[type="radio"]:checked + .radio-indicator::before {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .label-radio-option input[type="radio"]:focus + .radio-indicator {
