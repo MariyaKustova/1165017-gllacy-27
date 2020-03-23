@@ -1,16 +1,6 @@
-var appearMenu = document.querySelector(".link-menu");
-var modalMenu = document.querySelector(".modal-menu");
-
-var appearSearch = document.querySelector(".btn-search");
-var modalSearch = document.querySelector(".modal-search");
-
-var appearEntrance = document.querySelector(".btn-entrance");
 var modalEntrance = document.querySelector(".modal-entrance");
 var emailEntrance = document.querySelector(".email-entrance");
 var passwordEntrance = document.querySelector(".password-entrance");
-
-var appearBusket = document.querySelector(".btn-busket");
-var modalBusket = document.querySelector(".modal-busket");
 
 var appearFeedbackForm = document.querySelector(".btn.btn-address");
 var modalFeedbackForm = document.querySelector(".feedback-form");
@@ -45,32 +35,12 @@ try {
     isStorageSupport = false;
   }
 
-  try {
+try {
     storageInputEmailMailing = localStorage.getItem("inputEmailMailing");
     inputEmailMailing.value = storageInputEmailMailing;
       } catch (err) {
     isStorageSupport = false;
   }
-
-appearMenu.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalMenu.classList.toggle("appear-modal");
-});
-
-appearSearch.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalSearch.classList.toggle("appear-modal");
-});
-
-appearEntrance.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalEntrance.classList.toggle("appear-modal");
-});
-
-appearBusket.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalBusket.classList.toggle("appear-modal");
-});
 
 appearFeedbackForm.addEventListener("click", function(evt) {
   evt.preventDefault();

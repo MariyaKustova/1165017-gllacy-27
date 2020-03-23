@@ -47,9 +47,9 @@
           </a>
           <nav class="main-navigation">
             <ul class="site-navigation">
-              <li class="item-site-navigation">
-                <a class="link-underline link-menu" href="#">Каталог</a>
-                <div class="modal modal-menu">
+              <li class="item-site-navigation item-site-navigation-complex">
+                <a class="link-menu" href="#">Каталог</a>
+                <div class="modal-menu">
                   <ul class="menu">
                     <li class="item-menu">
                       <a href="#"><b>Новинки</b></a>
@@ -64,19 +64,19 @@
                 </div>
               </li>
               <li class="item-site-navigation">
-                <a class="link-underline link-delivery" href="#"
+                <a class="link-delivery" href="#"
                   >Доставка и оплата</a
                 >
               </li>
               <li class="item-site-navigation">
-                <a class="link-underline link-company" href="#">О Компании</a>
+                <a class="link-company" href="#">О Компании</a>
               </li>
             </ul>
           </nav>
           <nav class="main-navigation-control">
             <ul class="control">
-              <li>
-                <a class="btn-control btn-search" href="#" aria-label="поиск">
+              <li class="control-item-complex control-item-search">
+                <a class="btn-search" href="#" aria-label="поиск">
                   <svg
                     class="search"
                     xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@
                     />
                   </svg>
                 </a>
-                <div class="modal modal-search">
+                <div class="modal-search">
                   <form action="https://echo.htmlacademy.ru" method="post">
                     <label for="search" class="visually-hidden"
                       >Строка поиска</label
@@ -99,13 +99,13 @@
                       id="search"
                       type="text"
                       name="search"
-                      placeholder="Крем-брюле"
+                      placeholder="Например: Крем-брюле"
                     />
                   </form>
                 </div>
               </li>
-              <li>
-                <a class="btn-control btn-entrance" href="#">
+              <li class="control-item-complex control-item-entrance">
+                <a class="btn-entrance" href="#">
                   <svg
                     class="entrance"
                     xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@
                   </svg>
                   <span>Вход</span>
                 </a>
-                <div class="modal modal-entrance">
+                <div class="modal-entrance">
                   <form
                     class="form-entrance"
                     action="https://echo.htmlacademy.ru"
@@ -143,7 +143,7 @@
                     />
                     <label for="password" class="visually-hidden">Пароль</label>
                     <input
-                    class="password-entrance"
+                      class="password-entrance"
                       id="password"
                       type="password"
                       placeholder="••••••••"
@@ -159,8 +159,8 @@
                   </form>
                 </div>
               </li>
-              <li>
-                <a class="btn-control btn-busket" href="#" aria-label="корзина">
+              <li class="control-item-complex control-item-busket">
+                <a class="btn-busket" href="#" aria-label="корзина">
                   <svg
                     class="busket"
                     xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +184,7 @@
         </div>
         <div class="mode-operation">
           <p>С 10 до 20, ежедневно</p>
-          <a href="tel:88124502525">8 812 450-25-25</a>
+          <a class="tel-number" href="tel:88124502525">8 812 450-25-25</a>
         </div>
       </header>
 
@@ -241,19 +241,20 @@
             <h2 class="visually-hidden">Лидеры продаж</h2>
             <ul class="cards-list">
               <li class="li-ice-cream ice-cream-hit">
-                <img
-                  src="img/index/orange.jpg"
-                  width="267"
-                  height="267"
-                  alt="Мороженое - сливочное с апельсиновым джемом и цитрусовой стружкой"
-                />
-                <b>310 ₽/<span>кг</span></b>
-                <a href="#"
-                  >Сливочное с апельсиновым джемом и цитрусовой стружкой</a
-                >
+                <a href="#" class="card-content">
+                  <img
+                    src="img/index/orange.jpg"
+                    width="267"
+                    height="267"
+                    alt="Мороженое - сливочное с апельсиновым джемом и цитрусовой стружкой"
+                  />
+                  <b>310 ₽/<span>кг</span></b>
+                  <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                </a>
                 <a href="#" class="btn btn-cards">Быстрый просмотр</a>
               </li>
               <li class="li-ice-cream ice-cream-hit">
+                <a href="#" class="card-content">
                 <img
                   src="img/index/coffee.jpg"
                   width="267"
@@ -261,10 +262,12 @@
                   alt="Мороженое - cливочно-кофейное с кусочками шоколада"
                 />
                 <b>380 ₽/<span>кг</span></b>
-                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-                <a href="#" class="btn btn-cards">Быстрый просмотр</a>
-              </li>
+                <p>Сливочно-кофейное с кусочками шоколада</p>
+              </a>
+              <a href="#" class="btn btn-cards">Быстрый просмотр</a>
+            </li>
               <li class="li-ice-cream ice-cream-hit">
+                <a href="#" class="card-content">
                 <img
                   src="img/index/strawberry.jpg"
                   width="267"
@@ -272,12 +275,12 @@
                   alt="Мороженое - cливочно-клубничное с присыпкой из белого шоколада"
                 />
                 <b>355 ₽/<span>кг</span></b>
-                <a href="#"
-                  >Сливочно-клубничное с присыпкой из белого шоколада</a
-                >
-                <a href="#" class="btn btn-cards">Быстрый просмотр</a>
-              </li>
+                <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+              </a>
+              <a href="#" class="btn btn-cards">Быстрый просмотр</a>
+            </li>
               <li class="li-ice-cream ice-cream-hit">
+                <a href="#" class="card-content">
                 <img
                   src="img/index/cream.jpg"
                   width="267"
@@ -285,9 +288,10 @@
                   alt="Мороженое - Сливочное крем-брюле с карамельной подливкой"
                 />
                 <b>415 ₽/<span>кг</span></b>
-                <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-                <a href="#" class="btn btn-cards">Быстрый просмотр</a>
-              </li>
+                <p>Сливочное крем-брюле с карамельной подливкой</p>
+              </a>
+              <a href="#" class="btn btn-cards">Быстрый просмотр</a>
+            </li>
             </ul>
           </section>
 
@@ -343,7 +347,7 @@
                     >Введите ваш электронный адрес</label
                   >
                   <input
-                  class="input-email-mailing"
+                    class="input-email-mailing"
                     id="email-mailing"
                     type="email"
                     name="email"
@@ -362,7 +366,7 @@
         <section class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003192!2d30.320858716173536!3d59.93871916905404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584440794895!5m2!1sru!2sru"
-            width="1200"
+            width="100%"
             height="430"
             style="border:0;"
             allowfullscreen=""
@@ -376,7 +380,7 @@
             </p>
             <p class="order-phone">Для заказов по телефону:</p>
             <p>
-              <b><a href="tel:88124502525">8 812 450-25-25</a></b>
+              <b><a class="tel-number" href="tel:88124502525">8 812 450-25-25</a></b>
             </p>
             <p>(с 10 до 20 ежедневно)</p>
             <button class="btn btn-address" type="button">
@@ -424,16 +428,16 @@
           </div>
           <div class="information-suppliers">
             <ul>
-              <li class="link-information-suppliers">
+              <li class="item-information-suppliers">
                 <a href="#">Для поставщиков</a>
               </li>
-              <li>
-                <a href="#">О производстве</a>
-              </li>
-              <li>
+              <li class="item-information-suppliers">
                 <a href="#">Наши документы</a>
               </li>
-              <li>
+              <li class="item-information-suppliers">
+                <a href="#">О производстве</a>
+              </li>
+              <li class="item-information-suppliers">
                 <a href="#">Экологические стандарты</a>
               </li>
             </ul>
@@ -450,7 +454,7 @@
         </div>
       </footer>
 
-      <div class="modal feedback-form clearfix">
+      <div class="feedback-form">
         <form action="https://echo.htmlacademy.ru">
           <h2>Мы обязательно вам ответим!</h2>
           <label class="visually-hidden" for="name-surname"
@@ -482,7 +486,9 @@
             cols="47"
             placeholder="В свободной форме"
           ></textarea>
-          <button class="btn btn-form" type="submit">Отправить</button>
+          <div class="alignment">
+            <button class="btn btn-form" type="submit">Отправить</button>
+          </div>
           <button class="btn-close" aria-label="закрыть форму"></button>
         </form>
       </div>
