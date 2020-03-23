@@ -1,4 +1,4 @@
-var modalEntrance = document.querySelector(".modal-entrance");
+var modalEntrance = document.querySelector(".form-entrance");
 var emailEntrance = document.querySelector(".email-entrance");
 var passwordEntrance = document.querySelector(".password-entrance");
 
@@ -10,7 +10,7 @@ var feedbackInputEmail = document.getElementById("email-feedback-form");
 var feedback = document.getElementById("feedback");
 
 var mailingForm = document.querySelector(".newsletter-subscription");
-var inputEmailMailing = document.querySelector(".input-email-mailing")
+var inputEmailMailing = document.querySelector(".input-email-mailing");
 
 var isStorageSupport = true;
 var storageFeedbackInputName = "";
