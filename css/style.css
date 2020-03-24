@@ -788,6 +788,7 @@ a.btn-buy:active {
 
 .sales-leader {
   margin-bottom: 20px;
+  margin-left: -26px;
 }
 
 .cards-list {
@@ -797,14 +798,13 @@ a.btn-buy:active {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .li-ice-cream {
   text-align: center;
 
   max-width: 267px;
-  margin: 18px 0 -8px 0;
+  margin: 18px 0 -8px 26px;
 
   position: relative;
 }
