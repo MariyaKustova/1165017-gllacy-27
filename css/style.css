@@ -549,7 +549,7 @@ li.busket-row {
 .mode-operation {
   position: absolute;
   z-index: 1;
-  top: 75px;
+  top: 74px;
   right: 25px;
 }
 
@@ -606,8 +606,7 @@ li.busket-row {
   font-weight: 800;
 
   width: 700px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 2px auto 31px;
 }
 
 .btn-buy {
@@ -718,7 +717,7 @@ li.busket-row {
 .current-promotion {
   max-width: 560px;
   padding: 23px 21px 70px;
-  margin-bottom: 17px;
+  margin-bottom: 22px;
   box-sizing: border-box;
 
   border-radius: 15px;
@@ -759,7 +758,7 @@ li.busket-row {
   font-size: 18px;
   line-height: 24px;
 
-  padding: 11px 21px;
+  padding: 11px 22px;
   margin-left: 11px;
 
   border-radius: 50px;
@@ -788,7 +787,7 @@ a.btn-buy:active {
 }
 
 .sales-leader {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .cards-list {
@@ -843,7 +842,7 @@ a.btn-buy:active {
 
   position: absolute;
   z-index: 20;
-  top: 6px;
+  top: 0;
   left: 0;
 }
 
@@ -859,6 +858,12 @@ a.btn-buy:active {
   text-decoration: underline;
 }
 
+.li-ice-cream p {
+  margin-top: 8px;
+  margin-bottom: 26px;
+  max-width: 258px;
+}
+
 .li-ice-cream b {
   font-size: 45px;
   line-height: 45px;
@@ -866,7 +871,7 @@ a.btn-buy:active {
 
   position: absolute;
   left: 0px;
-  top: 213px;
+  top: 209px;
 }
 
 .li-ice-cream span {
@@ -1071,7 +1076,7 @@ a.btn-cards:active {
 .mailing p {
   line-height: 22px;
 
-  margin: 35px 0 34px 0;
+  margin: 30px 0 34px 0;
 }
 
 .newsletter-subscription {
@@ -1079,7 +1084,7 @@ a.btn-cards:active {
   margin-bottom: 33px;
 
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .newsletter-subscription input {
@@ -1196,7 +1201,7 @@ p.order-phone {
   max-width: 1200px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 16px 27px 26px 27px;
+  padding: 13px 24px 26px 27px;
 
   display: flex;
   justify-content: space-between;
@@ -1362,7 +1367,11 @@ p.order-phone {
 
   color: #fefefe;
 
-  margin: -21px 0 0 0;
+  margin: -18px 0 0 0;
+}
+
+.HTMLa span {
+  text-decoration: underline;
 }
 
 /* Стилизация попапов */
@@ -1534,6 +1543,10 @@ p.order-phone {
   z-index: 2;
   top: -1px;
   right: -14px;
+}
+
+.filter {
+  margin-bottom: 6px;
 }
 
 .filter h2 {
@@ -1779,7 +1792,9 @@ a.btn-sorting:focus,
   border-color: rgba(255, 255, 255, 1);
 }
 
-.label-radio-option:hover input[type="radio"]:checked + .radio-indicator::before {
+.label-radio-option:hover
+  input[type="radio"]:checked
+  + .radio-indicator::before {
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -1801,7 +1816,7 @@ a.btn-sorting:focus,
 }
 
 .list-filler li:not(:last-child) {
-  margin-right: 22px;
+  margin-right: 21px;
 }
 
 .checkbox-indicator {
@@ -1899,12 +1914,12 @@ a.btn-sorting:focus,
 }
 
 .results {
-  margin-bottom: 42px;
+  margin-bottom: 63px;
 }
 
 .pagination {
   list-style: none;
-  margin: 0;
+  margin-bottom: 5px;
   padding: 0 0 30px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
